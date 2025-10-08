@@ -1,3 +1,5 @@
+import { Instagram } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
@@ -17,7 +19,6 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><a href="#accueil" className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
               <li><a href="#portfolio" className="text-background/70 hover:text-background transition-colors">Portfolio</a></li>
-              <li><a href="#etudes" className="text-background/70 hover:text-background transition-colors">Études de cas</a></li>
               <li><a href="#avis" className="text-background/70 hover:text-background transition-colors">Avis clients</a></li>
             </ul>
           </div>
@@ -31,6 +32,7 @@ const Footer = () => {
               <li><a href="#" className="text-background/70 hover:text-background transition-colors">Contenu organique</a></li>
               <li><a href="#" className="text-background/70 hover:text-background transition-colors">VSL & Sales</a></li>
               <li><a href="#" className="text-background/70 hover:text-background transition-colors">Social Media</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">IA & 3D</a></li>
             </ul>
           </div>
 
@@ -41,6 +43,17 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><a href="mailto:youri.sablon@gmail.com" className="text-background/70 hover:text-background transition-colors">youri.sablon@gmail.com</a></li>
               <li><a href="tel:+33658370994" className="text-background/70 hover:text-background transition-colors">+33 6 58 37 09 94</a></li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/yourisablon/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-background transition-colors inline-flex items-center gap-2"
+                >
+                  <Instagram className="w-4 h-4" />
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>

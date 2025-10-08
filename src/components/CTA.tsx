@@ -23,11 +23,14 @@ const CTA = () => {
             </p>
 
             <Button 
+              asChild
               size="lg"
               className="bg-background text-primary hover:bg-background/90 rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
-              Réserver un appel découverte
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+                Réserver un appel découverte
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
 
             <p className="text-sm text-primary-foreground/80 mt-4">

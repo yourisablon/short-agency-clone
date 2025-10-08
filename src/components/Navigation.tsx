@@ -16,18 +16,18 @@ const Navigation = () => {
             <a href="#portfolio" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Portfolio
             </a>
-            <a href="#etudes" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Étude de cas
-            </a>
             <a href="#avis" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Avis clients
             </a>
           </div>
 
           <Button 
+            asChild
             className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-6 font-medium"
           >
-            Prendre un rendez-vous
+            <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+              Prendre un rendez-vous
+            </a>
           </Button>
         </div>
       </div>
