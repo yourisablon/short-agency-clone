@@ -26,10 +26,13 @@ const Hero = () => {
 
           <div className="flex flex-col items-center gap-6">
             <Button 
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
-              Je veux faire exploser ma marque →
+              <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+                Je veux faire exploser ma marque →
+              </a>
             </Button>
 
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-foreground">

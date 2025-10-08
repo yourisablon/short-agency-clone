@@ -19,7 +19,7 @@ const CTA = () => {
             </h2>
             
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8">
-              Rejoignez les +200 entreprises qui ont fait confiance à Agence content pour transformer leur marketing vidéo.
+              Rejoignez les +200 entreprises qui ont fait confiance à AGENCE CONTENT pour transformer leur marketing vidéo.
             </p>
 
             <Button 
