@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            100% de clients satisfaits, +200 entreprises accompagnées et des vidéos qui apportent vraiment des résultats.
+            100% de clients satisfaits et des vidéos qui apportent vraiment des résultats.
           </p>
 
           <div className="flex flex-col items-center gap-6">
