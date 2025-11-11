@@ -26,9 +26,6 @@ const VideoShowcase = () => {
               </a>
             </Button>
 
-            <p className="text-lg font-semibold text-foreground">
-              Nous avons déjà fait exploser +200 entreprises.
-            </p>
           </div>
         </div>
       </div>
