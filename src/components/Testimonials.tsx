@@ -4,16 +4,16 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Marie Dubois",
-      role: "CEO, TechStart",
-      content: "Les vidéos créées par Short ont multiplié nos conversions par 3. Une équipe incroyable qui comprend vraiment les enjeux du marketing digital.",
+      name: "Tomy",
+      role: "Glamrock PUB",
+      content: "Super vidéo encore merci pour votre réactivité, j'ai de nouveaux clients !",
       rating: 5,
     },
     {
       id: 2,
-      name: "Thomas Laurent",
-      role: "Directeur Marketing, FashionHub",
-      content: "Des créations originales et impactantes. Nos campagnes sur TikTok et Instagram n'ont jamais été aussi performantes.",
+      name: "Muriel Prost",
+      role: "",
+      content: "waouh j'adore le rendu de la vidéo, mes créations sont vraiment mises en valeur je ne m'attendais pas a autant de vidéos ! je vais tester tout ca sur instagram",
       rating: 5,
     },
     {
