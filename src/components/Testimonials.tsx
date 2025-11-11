@@ -6,21 +6,21 @@ const Testimonials = () => {
       id: 1,
       name: "Tomy",
       role: "Glamrock PUB",
-      content: "Super vidéo encore merci pour votre réactivité, j'ai de nouveaux clients !",
+      content: "Super vidéo, encore merci pour votre réactivité ! Grâce à vous j'ai trouvé de nouveaux clients.",
       rating: 5,
     },
     {
       id: 2,
       name: "Muriel Prost",
       role: "",
-      content: "waouh j'adore le rendu de la vidéo, mes créations sont vraiment mises en valeur je ne m'attendais pas a autant de vidéos ! je vais tester tout ca sur instagram",
+      content: "Waouh, j'adore le rendu ! Mes créations sont sublimées, et j'ai reçu plusieurs vidéos prêtes à poster sur Instagram.",
       rating: 5,
     },
     {
       id: 3,
       name: "Sophie Martin",
-      role: "Fondatrice, BeautyBox",
-      content: "Short a transformé notre stratégie de contenu. Les résultats sont impressionnants et l'accompagnement est top.",
+      role: "Fondatrice de BeautyBox",
+      content: "AGENCE NOA a complètement transformé notre stratégie de contenu. Les résultats sont bluffants et le suivi est top.",
       rating: 5,
     },
   ];
@@ -30,12 +30,9 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-black">
-            <span className="text-foreground">Ce que disent</span>{" "}
-            <span className="text-primary">nos clients</span>
+            <span className="text-foreground">Ils nous ont fait confiance.</span>{" "}
+            <span className="text-primary">Et ils ne le regrettent pas.</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            100% de satisfaction client, ce n'est pas un hasard
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">

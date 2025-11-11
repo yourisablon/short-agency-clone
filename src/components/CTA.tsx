@@ -13,13 +13,13 @@ const CTA = () => {
           
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-black text-primary-foreground mb-6">
-              Prêt à faire décoller
+              Prêt à booster votre business
               <br />
-              votre entreprise ?
+              avec la vidéo ?
             </h2>
             
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8">
-              Rejoignez les entreprises qui ont fait confiance à AGENCE NOA pour transformer leur marketing vidéo.
+              Rejoignez les marques qui font confiance à AGENCE NOA pour créer, diffuser et automatiser leurs contenus vidéo.
             </p>
 
             <Button 
@@ -28,13 +28,13 @@ const CTA = () => {
               className="bg-background text-primary hover:bg-background/90 rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
-                Réserver un appel découverte
+                Réserver un appel découverte →
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
 
             <p className="text-sm text-primary-foreground/80 mt-4">
-              Premier appel gratuit • Sans engagement • Réponse sous 24h
+              Premier appel gratuit • Sans engagement • Réponse en 24h
             </p>
           </div>
         </div>

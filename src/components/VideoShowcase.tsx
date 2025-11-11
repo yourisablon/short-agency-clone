@@ -16,16 +16,14 @@ const VideoShowcase = () => {
           </div>
 
           <div className="text-center mt-12 space-y-6">
-            <Button 
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
-            >
-              <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
-                Je veux faire exploser ma marque →
-              </a>
-            </Button>
-
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+              Nous créons des vidéos qui convertissent,
+            </h3>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              et on vous aide à les faire cartonner grâce à la pub et l'automatisation.
+              <br />
+              Moins d'efforts, plus de résultats.
+            </p>
           </div>
         </div>
       </div>

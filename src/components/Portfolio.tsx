@@ -1,11 +1,13 @@
 const Portfolio = () => {
   const projects = [
-    { id: 1, title: "Campagne Instagram", category: "Social Media" },
-    { id: 2, title: "VSL Produit", category: "Publicité" },
-    { id: 3, title: "Vidéo Organique", category: "Contenu" },
+    { id: 1, title: "Reels Instagram", category: "Social Media" },
+    { id: 2, title: "Contenus viraux", category: "Social Media" },
+    { id: 3, title: "VSL", category: "Publicité" },
     { id: 4, title: "TikTok Ads", category: "Publicité" },
-    { id: 5, title: "Reel Viral", category: "Social Media" },
-    { id: 6, title: "Short YouTube", category: "YouTube" },
+    { id: 5, title: "YouTube Shorts", category: "Publicité" },
+    { id: 6, title: "Vidéos de lancement", category: "Marque & Produit" },
+    { id: 7, title: "Storytelling", category: "Marque & Produit" },
+    { id: 8, title: "Campagnes visuelles", category: "Marque & Produit" },
   ];
 
   return (
@@ -13,11 +15,11 @@ const Portfolio = () => {
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-black">
-            <span className="text-primary">Notre portfolio</span>{" "}
-            <span className="text-foreground">en quelques clics</span>
+            <span className="text-primary">Nos créations</span>{" "}
+            <span className="text-foreground">qui font la différence</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Découvrez les vidéos qui ont transformé nos clients
+            Découvrez les vidéos qui ont propulsé nos clients vers le succès.
           </p>
         </div>
 

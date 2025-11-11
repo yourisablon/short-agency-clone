@@ -9,15 +9,15 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-black leading-tight">
-            <span className="text-primary">Explosez vos ventes</span>
+            <span className="text-primary">Faites exploser votre marque</span>
             <br />
-            <span className="text-foreground">grâce à des vidéos</span>
+            <span className="text-foreground">avec des vidéos, pubs et automatisations</span>
             <br />
-            <span className="text-foreground">performantes</span>
+            <span className="text-foreground">qui cartonnent.</span>
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            100% de clients satisfaits et des vidéos qui apportent vraiment des résultats.
+            De la création à la diffusion, on vous aide à générer plus de vues, plus de clients et plus de ventes — sans perdre de temps.
           </p>
 
           <div className="flex flex-col items-center gap-6">
@@ -27,7 +27,7 @@ const Hero = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
-                Je veux faire exploser ma marque →
+                Je veux faire briller ma marque →
               </a>
             </Button>
 
@@ -36,13 +36,19 @@ const Hero = () => {
                 <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                   <Check className="w-3 h-3 text-primary" />
                 </div>
-                Sans engagement.
+                Sans engagement
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                   <Check className="w-3 h-3 text-primary" />
                 </div>
-                Publicité et organique.
+                Publicité & organique
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Check className="w-3 h-3 text-primary" />
+                </div>
+                Automatisations incluses
               </div>
             </div>
           </div>
