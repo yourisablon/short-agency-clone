@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">AGENCE CONTENT</h3>
+            <h3 className="text-2xl font-bold">AGENCE NOA</h3>
             <p className="text-sm text-background/70">
-              L'agence vidéo verticale N°1 en France
+              NOT ONLY ADS
             </p>
           </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="mailto:youri.sablon@gmail.com" className="text-background/70 hover:text-background transition-colors">youri.sablon@gmail.com</a></li>
+              <li><a href="mailto:contact@agencenoa.com" className="text-background/70 hover:text-background transition-colors">contact@agencenoa.com</a></li>
               <li><a href="tel:+33658370994" className="text-background/70 hover:text-background transition-colors">+33 6 58 37 09 94</a></li>
               <li>
                 <a 
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center text-sm text-background/70">
-          <p>&copy; 2025 AGENCE CONTENT. Tous droits réservés.</p>
+          <p>&copy; 2025 AGENCE NOA. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

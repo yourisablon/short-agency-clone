@@ -8,10 +8,6 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-primary/20 text-sm font-medium">
-            🇫🇷 L'agence vidéo verticale N°1 en France
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-black leading-tight">
             <span className="text-primary">Explosez vos ventes</span>
             <br />
