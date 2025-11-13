@@ -18,9 +18,9 @@ const Testimonials = () => {
     },
     {
       id: 3,
-      name: "Sophie Martin",
-      role: "Fondatrice de BeautyBox",
-      content: "AGENCE NOA a complètement transformé notre stratégie de contenu. Les résultats sont bluffants et le suivi est top.",
+      name: "L'adjoint",
+      role: "Skenawin Studios",
+      content: "Magnifique la qualité est top !",
       rating: 5,
     },
   ];
