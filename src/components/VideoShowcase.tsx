@@ -1,58 +1,74 @@
 import { Play } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const VideoShowcase = () => {
   return (
-    <section className="py-32 bg-background relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-      
+    <section className="relative py-32 overflow-hidden bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Video player with modern glass effect */}
-          <div className="relative animate-slide-up">
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-[2.5rem] blur-2xl opacity-50" />
-            
-            <div className="relative aspect-video bg-gradient-to-br from-primary/5 via-background to-accent/5 rounded-3xl overflow-hidden border border-border/50 backdrop-blur-sm group cursor-pointer shadow-2xl hover:shadow-[0_25px_80px_-15px_hsl(var(--primary)/0.3)] transition-all duration-500">
-              {/* Grid overlay */}
-              <div className="absolute inset-0 opacity-5" style={{
-                backgroundImage: "linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)",
-                backgroundSize: "50px 50px"
-              }} />
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Video player mockup */}
+          <div className="relative group">
+            <div 
+              className="relative aspect-video rounded-3xl overflow-hidden border-4 border-border/50 shadow-2xl"
+              style={{ background: 'var(--gradient-card)' }}
+            >
+              {/* Video thumbnail */}
+              <div className="absolute inset-0 bg-gradient-to-br from-muted/30 to-transparent" />
               
+              {/* Grid overlay */}
+              <div className="absolute inset-0" style={{
+                backgroundImage: 'linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px)',
+                backgroundSize: '40px 40px'
+              }} />
+
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-primary/30 rounded-full blur-3xl animate-pulse" />
-                  <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-125 transition-transform duration-500 shadow-2xl">
-                    <Play className="w-10 h-10 text-primary-foreground ml-1.5" fill="currentColor" />
-                  </div>
-                </div>
+                <button className="w-24 h-24 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 group-hover:shadow-primary/50">
+                  <Play className="w-10 h-10 ml-1" fill="currentColor" />
+                </button>
               </div>
-              
+
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+
+            {/* Floating element */}
+            <div className="absolute -right-4 -bottom-4 bg-card border-4 border-background rounded-2xl p-6 shadow-2xl animate-float">
+              <div className="text-4xl font-bold text-primary">50€</div>
+              <div className="text-sm text-muted-foreground font-medium">Par vidéo</div>
             </div>
           </div>
 
-          {/* Text content with modern layout */}
-          <div className="mt-20 grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-slide-right">
-              <h3 className="text-4xl md:text-5xl font-black text-foreground leading-tight">
-                Nous créons des vidéos
-                <br />
-                <span className="text-primary">qui convertissent</span>
-              </h3>
+          {/* Content */}
+          <div className="space-y-6">
+            <div className="inline-block">
+              <span className="text-accent font-bold text-sm tracking-wider uppercase px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+                Notre expertise
+              </span>
             </div>
             
-            <div className="space-y-6 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-muted/50 to-background border border-border/50 backdrop-blur-sm">
-                <p className="text-lg text-foreground/80 leading-relaxed">
-                  et on vous aide à les faire cartonner grâce à la pub et l'automatisation.
-                </p>
-                <p className="text-xl font-bold text-primary mt-4">
-                  Moins d'efforts, plus de résultats.
-                </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              CONTENU VIDÉO
+              <span className="block text-primary mt-2">QUI CONVERTIT</span>
+            </h2>
+            
+            <div className="space-y-4 text-lg text-muted-foreground">
+              <p className="font-medium">
+                Des vidéos publicitaires qui captivent votre audience et génèrent des résultats mesurables.
+              </p>
+              
+              <p>
+                Notre équipe d'experts crée du contenu optimisé pour les réseaux sociaux, conçu pour maximiser l'engagement et les conversions.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6 pt-8">
+              <div className="space-y-2">
+                <div className="text-3xl font-bold text-primary">48h</div>
+                <div className="text-sm text-muted-foreground font-medium">Livraison moyenne</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-bold text-accent">100%</div>
+                <div className="text-sm text-muted-foreground font-medium">Satisfaction garantie</div>
               </div>
             </div>
           </div>

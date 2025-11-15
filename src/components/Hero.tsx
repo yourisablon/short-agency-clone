@@ -1,72 +1,91 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { ArrowRight, Play, Video, Zap, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
-      {/* Animated background mesh */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: "var(--gradient-mesh)" }} />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Animated background gradient */}
+      <div 
+        className="absolute inset-0 opacity-50"
+        style={{ background: 'var(--gradient-hero)' }}
+      />
       
-      {/* Floating geometric shapes */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-      
-      <div className="container mx-auto px-6 py-32 relative z-10">
-        <div className="max-w-6xl mx-auto text-center space-y-10">
-          {/* Main heading with staggered animation */}
-          <div className="space-y-4 animate-slide-up">
-            <h1 className="text-6xl md:text-8xl font-black leading-[0.95] tracking-tight">
-              <span className="inline-block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse-glow">
-                Faites exploser
-              </span>
-              <br />
-              <span className="text-foreground">votre marque</span>
-            </h1>
-            <p className="text-2xl md:text-4xl font-bold text-foreground/80">
-              avec des vidéos, pubs et automatisations
-              <br />
-              <span className="text-primary">qui cartonnent.</span>
-            </p>
-          </div>
+      {/* Mesh gradient overlay */}
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{ background: 'var(--gradient-mesh)' }}
+      />
 
-          {/* Description with glass effect */}
-          <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <div className="inline-block backdrop-blur-sm bg-background/40 border border-border/50 rounded-2xl px-8 py-4 shadow-lg">
-              <p className="text-lg md:text-xl text-foreground max-w-3xl">
-                De la création à la diffusion, on vous aide à générer plus de vues, plus de clients et plus de ventes — sans perdre de temps.
-              </p>
+      {/* Floating icons */}
+      <div className="absolute top-1/4 left-[10%] animate-float">
+        <div className="bg-card/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border/50">
+          <Play className="w-8 h-8 text-foreground" />
+        </div>
+      </div>
+      
+      <div className="absolute top-1/3 right-[15%] animate-float" style={{ animationDelay: '1s' }}>
+        <div className="bg-card/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border/50">
+          <Video className="w-8 h-8 text-foreground" />
+        </div>
+      </div>
+      
+      <div className="absolute bottom-1/3 left-[15%] animate-float" style={{ animationDelay: '2s' }}>
+        <div className="bg-card/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border/50">
+          <Zap className="w-8 h-8 text-primary" />
+        </div>
+      </div>
+      
+      <div className="absolute bottom-1/4 right-[12%] animate-float" style={{ animationDelay: '1.5s' }}>
+        <div className="bg-card/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border/50">
+          <TrendingUp className="w-8 h-8 text-accent" />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10 pt-20">
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Main headline - ultra bold */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight tracking-tight">
+            <span className="block">VIDÉO & MARKETING</span>
+            <span className="block mt-2">
+              <span className="text-foreground">POUR </span>
+              <span className="text-primary">MARQUES</span>
+            </span>
+            <span className="block mt-2">
+              <span className="text-foreground">& </span>
+              <span className="text-accent">CRÉATEURS</span>
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-medium">
+            Travaillez avec des experts vidéo et marketing et propulsez votre contenu au niveau supérieur dès <span className="text-accent font-bold">50€</span> par vidéo.
+          </p>
+
+          {/* CTA Button */}
+          <Button 
+            asChild
+            size="lg"
+            className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-12 py-7 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
+          >
+            <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+              Commencer maintenant
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
+
+          {/* Social proof */}
+          <div className="mt-16 flex flex-wrap justify-center gap-12 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+              <span className="font-medium">Livraison rapide</span>
             </div>
-          </div>
-
-          {/* CTA Button with enhanced styling */}
-          <div className="flex flex-col items-center gap-8 animate-slide-up" style={{ animationDelay: "0.4s" }}>
-            <Button 
-              asChild
-              size="lg"
-              className="relative group bg-primary hover:bg-primary text-primary-foreground rounded-2xl px-10 py-7 text-lg font-bold shadow-2xl hover:shadow-[0_20px_80px_-15px_hsl(var(--primary))] transition-all duration-300 hover:scale-105 overflow-hidden"
-            >
-              <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
-                <span className="relative z-10">Je veux faire briller ma marque →</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700" />
-              </a>
-            </Button>
-
-            {/* Benefits badges with modern design */}
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              {[
-                "Sans engagement",
-                "Publicité & organique",
-                "Automatisations incluses"
-              ].map((text, i) => (
-                <div 
-                  key={i}
-                  className="flex items-center gap-2.5 px-5 py-2.5 bg-background/60 backdrop-blur-md border border-border/50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
-                  style={{ animationDelay: `${0.6 + i * 0.1}s` }}
-                >
-                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <span className="text-sm font-semibold text-foreground">{text}</span>
-                </div>
-              ))}
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: '0.5s' }} />
+              <span className="font-medium">Qualité professionnelle</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-accent animate-pulse" style={{ animationDelay: '1s' }} />
+              <span className="font-medium">Support dédié</span>
             </div>
           </div>
         </div>
