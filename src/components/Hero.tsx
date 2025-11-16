@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-medium">
-            Travaillez avec des experts vidéo et marketing et propulsez votre contenu au niveau supérieur dès <span className="text-accent font-bold">50€</span> par vidéo.
+            Travaillez avec des experts vidéo et marketing et propulsez votre contenu au niveau supérieur dès <span className="text-accent font-bold">100€</span> par vidéo.
           </p>
 
           {/* CTA Button */}
