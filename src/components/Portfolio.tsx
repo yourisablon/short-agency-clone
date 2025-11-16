@@ -57,6 +57,12 @@ const Portfolio = () => {
         title: "Campagne Instagram", 
         url: "https://www.youtube.com/embed/sfmiVDjuNY4?autoplay=1" 
       });
+    } else if (projectId === 3) { // Brand Story
+      setSelectedVideo({ 
+        id: 3, 
+        title: "Brand Story", 
+        url: "https://www.youtube.com/embed/Q86nlh6M5WM?autoplay=1" 
+      });
     }
   };
 
