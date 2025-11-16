@@ -10,9 +10,9 @@ import {
 const projects = [
   {
     id: 1,
-    title: "Campagne TikTok",
+    title: "Campagne Instagram",
     category: "Publicité vidéo",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=800&auto=format&fit=crop",
     featured: true,
   },
   {
@@ -50,6 +50,12 @@ const Portfolio = () => {
         id: 2, 
         title: "Réseaux sociaux", 
         url: "https://www.youtube.com/embed/ytjbLfDHxpY?autoplay=1" 
+      });
+    } else if (projectId === 1) { // Campagne Instagram
+      setSelectedVideo({ 
+        id: 1, 
+        title: "Campagne Instagram", 
+        url: "https://www.youtube.com/embed/sfmiVDjuNY4?autoplay=1" 
       });
     }
   };
