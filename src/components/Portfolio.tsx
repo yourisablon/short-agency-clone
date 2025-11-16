@@ -1,4 +1,11 @@
 import { ExternalLink } from "lucide-react";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const projects = [
   {
@@ -29,8 +36,36 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  
+  const handleProjectClick = (projectId: number) => {
+    if (projectId === 4) { // Lancement produit
+      setIsVideoOpen(true);
+    }
+  };
+
   return (
-    <section id="portfolio" className="relative py-32 bg-background">
+    <>
+      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
+        <DialogContent className="max-w-4xl">
+          <DialogHeader>
+            <DialogTitle>Lancement produit</DialogTitle>
+          </DialogHeader>
+          <div className="aspect-video w-full">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/8CuxJDAiRes?autoplay=1"
+              title="Lancement produit"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+      
+      <section id="portfolio" className="relative py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
           <div className="inline-block mb-6">
@@ -51,7 +86,8 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`group relative overflow-hidden rounded-3xl border-2 border-border/50 transition-all duration-500 hover:border-primary/50 ${
+              onClick={() => handleProjectClick(project.id)}
+              className={`group relative overflow-hidden rounded-3xl border-2 border-border/50 transition-all duration-500 hover:border-primary/50 cursor-pointer ${
                 project.featured ? "md:col-span-2 md:aspect-[21/9]" : "aspect-square"
               }`}
               style={{ 
@@ -96,7 +132,8 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 
