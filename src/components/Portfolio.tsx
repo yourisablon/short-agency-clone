@@ -36,27 +36,37 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState<{ id: number; title: string; url: string } | null>(null);
   
   const handleProjectClick = (projectId: number) => {
     if (projectId === 4) { // Lancement produit
-      setIsVideoOpen(true);
+      setSelectedVideo({ 
+        id: 4, 
+        title: "Lancement produit", 
+        url: "https://www.youtube.com/embed/8CuxJDAiRes?autoplay=1" 
+      });
+    } else if (projectId === 2) { // Réseaux sociaux
+      setSelectedVideo({ 
+        id: 2, 
+        title: "Réseaux sociaux", 
+        url: "https://www.youtube.com/embed/ytjbLfDHxpY?autoplay=1" 
+      });
     }
   };
 
   return (
     <>
-      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
+      <Dialog open={!!selectedVideo} onOpenChange={() => setSelectedVideo(null)}>
         <DialogContent className="max-w-4xl">
           <DialogHeader>
-            <DialogTitle>Lancement produit</DialogTitle>
+            <DialogTitle>{selectedVideo?.title}</DialogTitle>
           </DialogHeader>
           <div className="aspect-video w-full">
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/8CuxJDAiRes?autoplay=1"
-              title="Lancement produit"
+              src={selectedVideo?.url}
+              title={selectedVideo?.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="rounded-lg"
