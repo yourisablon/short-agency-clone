@@ -33,7 +33,7 @@ const VideoShowcase = () => {
 
             {/* Floating element */}
             <div className="absolute -right-4 -bottom-4 bg-card border-4 border-background rounded-2xl p-6 shadow-2xl animate-float">
-              <div className="text-4xl font-bold text-primary">50€</div>
+              <div className="text-4xl font-bold text-primary">100€</div>
               <div className="text-sm text-muted-foreground font-medium">Par vidéo</div>
             </div>
           </div>
