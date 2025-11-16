@@ -3,16 +3,16 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Thomas",
-    role: "Entrepreneur",
-    content: "Résultats exceptionnels ! Mes vidéos génèrent 3x plus d'engagement depuis que je travaille avec NOA.",
+    name: "Tomy",
+    role: "Glamrock PUB",
+    content: "Super vidéo encore merci pour votre réactivité, j'ai de nouveaux clients !",
     rating: 5,
   },
   {
     id: 2,
-    name: "Marie Lambert",
+    name: "Muriel Prost",
     role: "Créatrice de contenu",
-    content: "Équipe réactive et professionnelle. La qualité des vidéos dépasse mes attentes à chaque fois.",
+    content: "waouh j'adore le rendu de la vidéo, mes créations sont vraiment mises en valeur je ne m'attendais pas a autant de vidéos ! je vais tester tout ca sur instagram",
     rating: 5,
   },
   {
