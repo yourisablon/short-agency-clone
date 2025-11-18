@@ -88,6 +88,81 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+
+        {/* Logo Banner */}
+        <div className="mt-24 overflow-hidden">
+          <div className="inline-block mb-6">
+            <span className="text-green-600 font-bold text-sm tracking-wider uppercase px-4 py-2 rounded-full bg-green-600/10 border border-green-600/20">
+              Ils nous font confiance
+            </span>
+          </div>
+          <div className="relative">
+            <div className="flex animate-scroll-infinite">
+              {/* First set of logos */}
+              <div className="flex gap-16 items-center px-8">
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/43/Logo_Olympique_de_Marseille.svg/1200px-Logo_Olympique_de_Marseille.svg.png" 
+                    alt="Olympique de Marseille"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://www.mpc-rh.com/wp-content/uploads/2023/03/cropped-mpc-new-logo.png" 
+                    alt="MPC"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://www.oneofus.dk/wp-content/uploads/2022/08/One-of-Us_Logo_Black.png" 
+                    alt="One of US"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://macguff.fr/wp-content/uploads/2021/02/MACGUFF_COULEUR_CMJN.jpg" 
+                    alt="Illumination Mac Guff"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+              </div>
+              {/* Duplicate set for infinite scroll */}
+              <div className="flex gap-16 items-center px-8">
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/43/Logo_Olympique_de_Marseille.svg/1200px-Logo_Olympique_de_Marseille.svg.png" 
+                    alt="Olympique de Marseille"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://www.mpc-rh.com/wp-content/uploads/2023/03/cropped-mpc-new-logo.png" 
+                    alt="MPC"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://www.oneofus.dk/wp-content/uploads/2022/08/One-of-Us_Logo_Black.png" 
+                    alt="One of US"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://macguff.fr/wp-content/uploads/2021/02/MACGUFF_COULEUR_CMJN.jpg" 
+                    alt="Illumination Mac Guff"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

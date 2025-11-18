@@ -139,6 +139,14 @@ export default {
             transform: "translateY(-20px)",
           },
         },
+        "scroll-infinite": {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -149,6 +157,7 @@ export default {
         "slide-up": "slide-up 0.7s ease-out",
         "slide-right": "slide-right 0.7s ease-out",
         "float": "float 3s ease-in-out infinite",
+        "scroll-infinite": "scroll-infinite 20s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
