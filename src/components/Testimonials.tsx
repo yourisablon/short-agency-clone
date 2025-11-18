@@ -90,13 +90,13 @@ const Testimonials = () => {
         </div>
 
         {/* Logo Banner */}
-        <div className="mt-24 overflow-hidden">
+        <div className="mt-24">
           <div className="inline-block mb-6">
             <span className="text-green-600 font-bold text-sm tracking-wider uppercase px-4 py-2 rounded-full bg-green-600/10 border border-green-600/20">
               Ils nous font confiance
             </span>
           </div>
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <div className="flex animate-scroll-infinite">
               {/* First set of logos */}
               <div className="flex gap-16 items-center px-8">
