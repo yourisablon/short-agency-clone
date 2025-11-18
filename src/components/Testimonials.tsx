@@ -109,22 +109,29 @@ const Testimonials = () => {
                 </div>
                 <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
                   <img 
-                    src="https://www.mpc-rh.com/wp-content/uploads/2023/03/cropped-mpc-new-logo.png" 
+                    src="https://assets.renderman.pixar.com/MPC/MPC-Logo.png" 
                     alt="MPC"
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
                 <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
                   <img 
-                    src="https://www.oneofus.dk/wp-content/uploads/2022/08/One-of-Us_Logo_Black.png" 
+                    src="https://workable-application-form.s3.us-east-1.amazonaws.com/advanced/production/667018513e6590e6b6d8cb1f/d17fe696-7624-9b3f-ab4a-0ae70893f65c" 
                     alt="One of US"
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
                 <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
                   <img 
-                    src="https://macguff.fr/wp-content/uploads/2021/02/MACGUFF_COULEUR_CMJN.jpg" 
+                    src="https://1000logos.net/wp-content/uploads/2021/05/Illumination-logo.png" 
                     alt="Illumination Mac Guff"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://www.ecv.fr/app/uploads/2024/10/AssetsPageSite_logo-1108x1108.jpg" 
+                    alt="ECV"
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
@@ -140,22 +147,29 @@ const Testimonials = () => {
                 </div>
                 <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
                   <img 
-                    src="https://www.mpc-rh.com/wp-content/uploads/2023/03/cropped-mpc-new-logo.png" 
+                    src="https://assets.renderman.pixar.com/MPC/MPC-Logo.png" 
                     alt="MPC"
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
                 <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
                   <img 
-                    src="https://www.oneofus.dk/wp-content/uploads/2022/08/One-of-Us_Logo_Black.png" 
+                    src="https://workable-application-form.s3.us-east-1.amazonaws.com/advanced/production/667018513e6590e6b6d8cb1f/d17fe696-7624-9b3f-ab4a-0ae70893f65c" 
                     alt="One of US"
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
                 <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
                   <img 
-                    src="https://macguff.fr/wp-content/uploads/2021/02/MACGUFF_COULEUR_CMJN.jpg" 
+                    src="https://1000logos.net/wp-content/uploads/2021/05/Illumination-logo.png" 
                     alt="Illumination Mac Guff"
+                    className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="flex-shrink-0 h-20 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                  <img 
+                    src="https://www.ecv.fr/app/uploads/2024/10/AssetsPageSite_logo-1108x1108.jpg" 
+                    alt="ECV"
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
