@@ -35,6 +35,13 @@ const projects = [
     category: "Vidéo publicitaire",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
   },
+  {
+    id: 5,
+    title: "Nos réalisations",
+    category: "Toutes nos vidéos",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&auto=format&fit=crop",
+    isGalleryLink: true,
+  },
 ];
 
 const Portfolio = () => {
@@ -108,65 +115,99 @@ const Portfolio = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div
-              key={project.id}
-              onClick={() => handleProjectClick(project.id)}
-              className={`group relative overflow-hidden rounded-3xl border-2 border-border/50 transition-all duration-500 hover:border-primary/50 cursor-pointer ${
-                project.featured ? "md:col-span-2 md:aspect-[21/9]" : "aspect-square"
-              }`}
-              style={{ 
-                background: 'var(--gradient-card)',
-                animationDelay: `${index * 0.1}s` 
-              }}
-            >
-              {/* Background image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700"
-              />
+            project.isGalleryLink ? (
+              <Link
+                key={project.id}
+                to="/gallery"
+                className={`group relative overflow-hidden rounded-3xl border-2 border-border/50 transition-all duration-500 hover:border-primary/50 cursor-pointer ${
+                  project.featured ? "md:col-span-2 md:aspect-[21/9]" : "aspect-square"
+                }`}
+                style={{ 
+                  background: 'var(--gradient-card)',
+                  animationDelay: `${index * 0.1}s` 
+                }}
+              >
+                {/* Background image */}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700"
+                />
 
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
 
-              {/* Content */}
-              <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <span className="inline-block text-accent font-bold text-xs tracking-wider uppercase px-3 py-1 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 mb-4">
-                    {project.category}
-                  </span>
-                  
-                  <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    {project.title}
-                  </h3>
+                {/* Content */}
+                <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="inline-block text-accent font-bold text-xs tracking-wider uppercase px-3 py-1 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 mb-4">
+                      {project.category}
+                    </span>
+                    
+                    <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                      {project.title}
+                    </h3>
 
-                  {project.id === 4 ? (
-                    <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="flex items-center gap-2 text-primary font-bold">
-                        <span>Voir le projet</span>
-                        <ExternalLink className="w-5 h-5" />
-                      </div>
-                      <Link to="/gallery">
-                        <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                          Nos réalisations →
-                        </Button>
-                      </Link>
+                    <div className="flex items-center gap-2 text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <span>Découvrir toutes nos vidéos</span>
+                      <ExternalLink className="w-5 h-5" />
                     </div>
-                  ) : (
+                  </div>
+                </div>
+
+                {/* Glow effect on hover */}
+                <div 
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{ boxShadow: 'inset 0 0 80px hsl(var(--primary) / 0.3)' }}
+                />
+              </Link>
+            ) : (
+              <div
+                key={project.id}
+                onClick={() => handleProjectClick(project.id)}
+                className={`group relative overflow-hidden rounded-3xl border-2 border-border/50 transition-all duration-500 hover:border-primary/50 cursor-pointer ${
+                  project.featured ? "md:col-span-2 md:aspect-[21/9]" : "aspect-square"
+                }`}
+                style={{ 
+                  background: 'var(--gradient-card)',
+                  animationDelay: `${index * 0.1}s` 
+                }}
+              >
+                {/* Background image */}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700"
+                />
+
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+
+                {/* Content */}
+                <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="inline-block text-accent font-bold text-xs tracking-wider uppercase px-3 py-1 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 mb-4">
+                      {project.category}
+                    </span>
+                    
+                    <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                      {project.title}
+                    </h3>
+
                     <div className="flex items-center gap-2 text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <span>Voir le projet</span>
                       <ExternalLink className="w-5 h-5" />
                     </div>
-                  )}
+                  </div>
                 </div>
-              </div>
 
-              {/* Glow effect on hover */}
-              <div 
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{ boxShadow: 'inset 0 0 80px hsl(var(--primary) / 0.3)' }}
-              />
-            </div>
+                {/* Glow effect on hover */}
+                <div 
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{ boxShadow: 'inset 0 0 80px hsl(var(--primary) / 0.3)' }}
+                />
+              </div>
+            )
           ))}
         </div>
       </div>
