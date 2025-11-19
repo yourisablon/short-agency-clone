@@ -1,11 +1,13 @@
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 const projects = [
   {
@@ -138,10 +140,24 @@ const Portfolio = () => {
                     {project.title}
                   </h3>
 
-                  <div className="flex items-center gap-2 text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <span>Voir le projet</span>
-                    <ExternalLink className="w-5 h-5" />
-                  </div>
+                  {project.id === 4 ? (
+                    <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="flex items-center gap-2 text-primary font-bold">
+                        <span>Voir le projet</span>
+                        <ExternalLink className="w-5 h-5" />
+                      </div>
+                      <Link to="/gallery">
+                        <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                          Nos réalisations →
+                        </Button>
+                      </Link>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2 text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <span>Voir le projet</span>
+                      <ExternalLink className="w-5 h-5" />
+                    </div>
+                  )}
                 </div>
               </div>
 
