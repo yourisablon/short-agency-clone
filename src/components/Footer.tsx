@@ -41,6 +41,7 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="/contact" className="text-background/70 hover:text-background transition-colors">Nous contacter</a></li>
               <li><a href="mailto:contact@agencenoa.com" className="text-background/70 hover:text-background transition-colors">contact@agencenoa.com</a></li>
               <li><a href="tel:+33658370994" className="text-background/70 hover:text-background transition-colors">+33 6 58 37 09 94</a></li>
               <li>
