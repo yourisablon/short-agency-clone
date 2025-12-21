@@ -59,8 +59,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/20 pt-8 text-center text-sm text-background/70">
+        <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-sm text-background/70">
           <p>&copy; 2025 AGENCE NOA. Tous droits réservés.</p>
+          <div className="flex items-center gap-4">
+            <a href="/cgv" className="hover:text-background transition-colors">CGV</a>
+            <a href="/mentions-legales" className="hover:text-background transition-colors">Mentions légales</a>
+            <a href="/politique-confidentialite" className="hover:text-background transition-colors">Politique de confidentialité</a>
+          </div>
         </div>
       </div>
     </footer>
