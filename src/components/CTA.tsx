@@ -50,7 +50,7 @@ const CTA = () => {
                 </a>
               </Button>
 
-              <div className="flex flex-wrap justify-center gap-8 text-sm">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-3 sm:gap-8 text-sm">
                 <div className="flex items-center gap-2 text-foreground/80">
                   <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
                     <Check className="w-4 h-4 text-accent" />
