@@ -50,21 +50,21 @@ const CTA = () => {
                 </a>
               </Button>
 
-              <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-3 sm:gap-8 text-sm">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start sm:items-center gap-3 sm:gap-8 text-sm mx-auto w-fit">
                 <div className="flex items-center gap-2 text-foreground/80">
-                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-accent" />
                   </div>
                   <span className="font-medium">Premier appel gratuit</span>
                 </div>
                 <div className="flex items-center gap-2 text-foreground/80">
-                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-accent" />
                   </div>
                   <span className="font-medium">Sans engagement</span>
                 </div>
                 <div className="flex items-center gap-2 text-foreground/80">
-                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-accent" />
                   </div>
                   <span className="font-medium">Réponse rapide</span>
