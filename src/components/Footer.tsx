@@ -1,33 +1,70 @@
+import { Instagram } from "lucide-react";
+
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
-            <div>
-              <h3 className="text-xl font-semibold mb-2">NOA</h3>
-              <p className="text-sm text-background/60">
-                Vidéo marketing pour PME et marques lifestyle
-              </p>
-            </div>
-            
-            <div className="flex flex-col md:flex-row gap-6 text-sm">
-              <a href="mailto:contact@agencenoa.com" className="text-background/70 hover:text-background transition-colors">
-                contact@agencenoa.com
-              </a>
-              <a href="tel:+33695009518" className="text-background/70 hover:text-background transition-colors">
-                +33 6 95 00 95 18
-              </a>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold">AGENCE NOA</h3>
+            <p className="text-sm text-background/70">
+              NOT ONLY ADS
+            </p>
           </div>
 
-          <div className="border-t border-background/15 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/50">
-            <p>© 2025 NOA. Tous droits réservés.</p>
-            <div className="flex items-center gap-6">
-              <a href="/cgv" className="hover:text-background/80 transition-colors">CGV</a>
-              <a href="/mentions-legales" className="hover:text-background/80 transition-colors">Mentions légales</a>
-              <a href="/politique-confidentialite" className="hover:text-background/80 transition-colors">Confidentialité</a>
-            </div>
+          <div className="space-y-4">
+            <h4 className="font-semibold text-sm uppercase tracking-wider">
+              Navigation
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
+              <li><a href="#portfolio" className="text-background/70 hover:text-background transition-colors">Portfolio</a></li>
+              <li><a href="#avis" className="text-background/70 hover:text-background transition-colors">Avis clients</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-sm uppercase tracking-wider">
+              Services
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Vidéos publicitaires</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Contenu organique</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">VSL & Sales</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Social Media</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">IA & 3D</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-sm uppercase tracking-wider">
+              Contact
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/contact" className="text-background/70 hover:text-background transition-colors">Nous contacter</a></li>
+              <li><a href="mailto:contact@agencenoa.com" className="text-background/70 hover:text-background transition-colors">contact@agencenoa.com</a></li>
+              <li><a href="tel:+33695009518" className="text-background/70 hover:text-background transition-colors">+33 6 95 00 95 18</a></li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/yourisablon/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-background transition-colors inline-flex items-center gap-2"
+                >
+                  <Instagram className="w-4 h-4" />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-sm text-background/70">
+          <p>&copy; 2025 AGENCE NOA. Tous droits réservés.</p>
+          <div className="flex items-center gap-4">
+            <a href="/cgv" className="hover:text-background transition-colors">CGV</a>
+            <a href="/mentions-legales" className="hover:text-background transition-colors">Mentions légales</a>
+            <a href="/politique-confidentialite" className="hover:text-background transition-colors">Politique de confidentialité</a>
           </div>
         </div>
       </div>

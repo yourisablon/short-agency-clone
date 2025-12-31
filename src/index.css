@@ -2,77 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design System - Clean, Professional, Minimalist
-   Colors: Black/Dark Gray + White with subtle green accent
-   Typography: Inter
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    --background: 180 25% 12%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 8%;
+    --card: 180 20% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 180 25% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 20 95% 55%;
+    --primary-foreground: 180 25% 12%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 180 15% 20%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 180 15% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 152 45% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 155 100% 75%;
+    --accent-foreground: 180 25% 12%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 152 45% 45%;
+    --border: 180 15% 20%;
+    --input: 180 15% 20%;
+    --ring: 20 95% 55%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    /* Custom tokens */
-    --shadow-subtle: 0 1px 3px hsl(0 0% 0% / 0.08);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.06);
-    --transition-smooth: all 0.3s ease;
+    /* Custom design tokens - Bold Modern Agency */
+    --gradient-primary: linear-gradient(135deg, hsl(20 95% 55%), hsl(28 100% 60%));
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% 0%, hsl(180 30% 18%), hsl(180 25% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(155 100% 75% / 0.15), hsl(20 95% 55% / 0.1));
+    --gradient-card: linear-gradient(135deg, hsl(180 20% 18%), hsl(180 20% 15%));
+    --gradient-mesh: radial-gradient(at 20% 30%, hsl(20 95% 55% / 0.15) 0px, transparent 50%), radial-gradient(at 80% 70%, hsl(155 100% 75% / 0.1) 0px, transparent 50%);
+    
+    --shadow-glow: 0 20px 70px -20px hsl(20 95% 55% / 0.6);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
+    --shadow-intense: 0 25px 80px -15px hsl(20 95% 55% / 0.7);
+    
+    --blur-glass: blur(12px);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
-    --background: 0 0% 5%;
+    --background: 180 30% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 8%;
+    --card: 180 25% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 5%;
+    --popover: 180 30% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 20 95% 55%;
+    --primary-foreground: 180 30% 8%;
 
-    --secondary: 0 0% 12%;
+    --secondary: 180 20% 15%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 12%;
+    --muted: 180 20% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 152 45% 50%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 155 100% 75%;
+    --accent-foreground: 180 30% 8%;
 
-    --destructive: 0 62% 30%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 152 45% 50%;
+    --border: 180 20% 15%;
+    --input: 180 20% 15%;
+    --ring: 20 95% 55%;
+    
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% 0%, hsl(180 35% 15%), hsl(180 30% 8%));
+    --gradient-mesh: radial-gradient(at 20% 30%, hsl(20 95% 55% / 0.2) 0px, transparent 50%), radial-gradient(at 80% 70%, hsl(155 100% 75% / 0.15) 0px, transparent 50%);
+    --shadow-glow: 0 20px 70px -20px hsl(20 95% 55% / 0.8);
+    --shadow-intense: 0 25px 80px -15px hsl(20 95% 55% / 0.9);
   }
 }
 
@@ -82,6 +96,6 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground;
   }
 }
