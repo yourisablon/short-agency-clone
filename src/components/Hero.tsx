@@ -43,49 +43,53 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10 pt-20">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Main headline - ultra bold */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight tracking-tight">
-            <span className="block">VIDÉO & MARKETING</span>
-            <span className="block mt-2">
-              <span className="text-foreground">POUR </span>
-              <span className="text-primary">MARQUES</span>
-            </span>
-            <span className="block mt-2">
-              <span className="text-foreground">& </span>
-              <span className="text-accent">CRÉATEURS</span>
-            </span>
+          {/* Main headline - H1 */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight">
+            Des vidéos claires et structurées pour faire avancer votre activité.
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-medium">
-            Travaillez avec des experts vidéo et marketing et propulsez votre contenu au niveau supérieur dès <span className="text-accent font-bold">100€</span> par vidéo.
+            Nous accompagnons les PME et les marques lifestyle dans la création de vidéos utiles, pensées pour transmettre un message clair et soutenir leurs objectifs.
           </p>
 
-          {/* CTA Button */}
-          <Button 
-            asChild
-            size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-12 py-7 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
-          >
-            <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
-              Commencer maintenant
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-          </Button>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-12 py-7 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
+            >
+              <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+                Parler de votre projet
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+            <Button 
+              asChild
+              variant="outline"
+              size="lg"
+              className="rounded-full px-12 py-7 text-lg font-bold transition-all duration-300 hover:scale-105"
+            >
+              <a href="#methode">
+                Voir notre méthode
+              </a>
+            </Button>
+          </div>
 
           {/* Social proof */}
           <div className="mt-16 flex flex-wrap justify-center gap-12 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="font-medium">Livraison rapide</span>
+              <span className="font-medium">Accompagnement personnalisé</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: '0.5s' }} />
-              <span className="font-medium">Qualité professionnelle</span>
+              <span className="font-medium">Clarté et structure</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent animate-pulse" style={{ animationDelay: '1s' }} />
-              <span className="font-medium">Support dédié</span>
+              <span className="font-medium">Résultats mesurables</span>
             </div>
           </div>
         </div>

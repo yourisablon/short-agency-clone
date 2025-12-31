@@ -1,13 +1,13 @@
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 
 const projects = [
   {
@@ -98,19 +98,28 @@ const Portfolio = () => {
       
       <section id="portfolio" className="relative py-32 bg-background">
       <div className="container mx-auto px-6">
+        {/* Section Offre */}
         <div className="max-w-3xl mb-20">
           <div className="inline-block mb-6">
             <span className="text-accent font-bold text-sm tracking-wider uppercase px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
-              Portfolio
+              Accompagnement vidéo
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            NOS CRÉATIONS
-            <span className="block text-primary mt-2">QUI PERFORMENT</span>
+            Accompagnement vidéo
           </h2>
-          <p className="text-lg text-muted-foreground font-medium">
-            Découvrez nos projets vidéo qui ont généré des millions de vues et des milliers de conversions.
+          <p className="text-lg text-muted-foreground font-medium mb-8">
+            Nous proposons un accompagnement sur mesure, adapté à votre activité et à vos objectifs. L'objectif n'est pas de produire beaucoup de vidéos, mais de produire les bonnes.
           </p>
+          <Button 
+            asChild
+            size="lg"
+            className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-8 py-6 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
+          >
+            <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+              Discuter de votre projet
+            </a>
+          </Button>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
