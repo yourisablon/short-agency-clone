@@ -1,9 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import VideoShowcase from "@/components/VideoShowcase";
-import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
+import Problem from "@/components/Problem";
+import Positioning from "@/components/Positioning";
+import Method from "@/components/Method";
+import Benefits from "@/components/Benefits";
+import Offer from "@/components/Offer";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,10 +14,12 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <VideoShowcase />
-        <Portfolio />
-        <Testimonials />
-        <CTA />
+        <Problem />
+        <Positioning />
+        <Method />
+        <Benefits />
+        <Offer />
+        <Contact />
       </main>
       <Footer />
     </div>
