@@ -33,16 +33,19 @@ const Testimonials = () => {
       />
 
       <div className="container mx-auto px-6 relative z-10">
+        {/* Section Confiance / Humain */}
         <div className="max-w-3xl mb-20">
           <div className="inline-block mb-6">
             <span className="text-accent font-bold text-sm tracking-wider uppercase px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
-              Témoignages
+              Notre engagement
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            ILS NOUS FONT
-            <span className="block text-primary mt-2">CONFIANCE</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+            Un partenaire, pas un simple prestataire.
           </h2>
+          <p className="text-lg text-muted-foreground font-medium">
+            Nous travaillons avec un nombre limité de clients afin de garantir un accompagnement sérieux et structuré. Si votre projet n'est pas adapté, nous vous le dirons simplement.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
