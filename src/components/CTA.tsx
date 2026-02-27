@@ -31,7 +31,7 @@ const CTA = () => {
               </div>
 
               <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
-                Je veux analyser mon acquisition
+                Je veux <span className="text-primary">analyser</span> mon <span className="text-primary">acquisition</span>
               </h2>
 
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto font-medium px-2">

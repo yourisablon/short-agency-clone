@@ -15,11 +15,11 @@ const VideoShowcase = () => {
             <ul className="space-y-3 list-none">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
-                <span>publient du contenu sans savoir s'il attire des clients</span>
+                <span>publient du contenu sans savoir s'il attire des <span className="text-primary">clients</span></span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
-                <span>testent des publicités sans cohérence</span>
+                <span>testent des <span className="text-primary">publicités</span> sans cohérence</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
@@ -27,11 +27,11 @@ const VideoShowcase = () => {
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
-                <span>n'ont aucune visibilité sur leurs prochaines demandes</span>
+                <span>n'ont aucune visibilité sur leurs prochaines <span className="text-primary">demandes</span></span>
               </li>
             </ul>
-            <p className="font-medium text-foreground">Résultat : une activité irrégulière et difficile à prévoir.</p>
-            <p>Le problème n'est pas votre entreprise.<br />C'est l'absence d'un système clair pour attirer des clients.</p>
+            <p className="font-medium text-foreground">Résultat : une <span className="text-primary">activité</span> irrégulière et difficile à prévoir.</p>
+            <p>Le problème n'est pas votre entreprise.<br />C'est l'absence d'un <span className="text-primary">système</span> clair pour attirer des clients.</p>
           </div>
         </div>
 
@@ -44,18 +44,18 @@ const VideoShowcase = () => {
             <p>La plupart des entreprises utilisent :</p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 my-8">
               <div className="p-4 rounded-2xl border border-border/50 flex-1" style={{ background: 'var(--gradient-card)' }}>
-                <span>la vidéo pour être vues</span>
+                <span>la <span className="text-primary">vidéo</span> pour être vues</span>
               </div>
               <div className="p-4 rounded-2xl border border-border/50 flex-1" style={{ background: 'var(--gradient-card)' }}>
-                <span>la publicité pour tester</span>
+                <span>la <span className="text-primary">publicité</span> pour tester</span>
               </div>
               <div className="p-4 rounded-2xl border border-border/50 flex-1" style={{ background: 'var(--gradient-card)' }}>
                 <span>Instagram pour publier</span>
               </div>
             </div>
             <p className="font-medium text-foreground">Mais séparément.</p>
-            <p>C'est un système cohérent.</p>
-            <p>Quand contenu, publicité et automatisation fonctionnent ensemble,<br />l'acquisition devient plus stable.</p>
+            <p>C'est un <span className="text-primary">système</span> cohérent.</p>
+            <p>Quand contenu, publicité et <span className="text-primary">automatisation</span> fonctionnent ensemble,<br />l'<span className="text-primary">acquisition</span> devient plus <span className="text-primary">stable</span>.</p>
           </div>
         </div>
 
@@ -67,24 +67,24 @@ const VideoShowcase = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-8">
-            Un système complet pour attirer des clients.
+            Un <span className="text-primary">système</span> complet pour attirer des <span className="text-primary">clients</span>.
           </h2>
           <p className="text-lg text-muted-foreground mb-8">Nous mettons en place un système complet qui combine :</p>
           <ul className="space-y-4 text-lg text-muted-foreground">
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
-              <span>des vidéos pensées pour attirer les bons clients</span>
+              <span>des <span className="text-primary">vidéos</span> pensées pour attirer les bons clients</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
-              <span>des campagnes publicitaires ciblées</span>
+              <span>des campagnes <span className="text-primary">publicitaires</span> ciblées</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2.5" />
-              <span>des automatisations pour capter et qualifier les demandes</span>
+              <span>des <span className="text-primary">automatisations</span> pour capter et qualifier les <span className="text-primary">demandes</span></span>
             </li>
           </ul>
-          <p className="text-lg text-foreground font-medium mt-8">Objectif : transformer votre visibilité en clients concrets.</p>
+          <p className="text-lg text-foreground font-medium mt-8">Objectif : transformer votre visibilité en clients <span className="text-primary">concrets</span>.</p>
         </div>
 
         {/* SECTION BÉNÉFICES */}
@@ -95,11 +95,11 @@ const VideoShowcase = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex items-center gap-4 p-4">
               <div className="w-3 h-3 rounded-full bg-accent flex-shrink-0" />
-              <span className="text-lg text-muted-foreground">une stratégie adaptée à votre activité</span>
+              <span className="text-lg text-muted-foreground">une stratégie adaptée à votre <span className="text-primary">activité</span></span>
             </div>
             <div className="flex items-center gap-4 p-4">
               <div className="w-3 h-3 rounded-full bg-accent flex-shrink-0" />
-              <span className="text-lg text-muted-foreground">des vidéos conçues pour attirer des clients</span>
+              <span className="text-lg text-muted-foreground">des <span className="text-primary">vidéos</span> conçues pour attirer des <span className="text-primary">clients</span></span>
             </div>
             <div className="flex items-center gap-4 p-4">
               <div className="w-3 h-3 rounded-full bg-accent flex-shrink-0" />
@@ -107,7 +107,7 @@ const VideoShowcase = () => {
             </div>
             <div className="flex items-center gap-4 p-4">
               <div className="w-3 h-3 rounded-full bg-accent flex-shrink-0" />
-              <span className="text-lg text-muted-foreground">un système qui capte et filtre les demandes</span>
+              <span className="text-lg text-muted-foreground">un <span className="text-primary">système</span> qui capte et filtre les <span className="text-primary">demandes</span></span>
             </div>
             <div className="flex items-center gap-4 p-4 md:col-span-2">
               <div className="w-3 h-3 rounded-full bg-accent flex-shrink-0" />
@@ -116,7 +116,7 @@ const VideoShowcase = () => {
           </div>
           <div className="mt-8 text-lg text-muted-foreground space-y-2">
             <p>Nous ne produisons pas du contenu pour remplir vos réseaux.</p>
-            <p className="text-foreground font-medium">Nous mettons en place un système pour attirer des clients.</p>
+            <p className="text-foreground font-medium">Nous mettons en place un système pour attirer des <span className="text-primary">clients</span>.</p>
           </div>
         </div>
 
@@ -128,22 +128,22 @@ const VideoShowcase = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
               <div className="text-4xl font-bold text-primary mb-4">1.</div>
-              <p className="text-muted-foreground">Analyse de votre situation actuelle</p>
+              <p className="text-muted-foreground"><span className="text-primary">Analyse</span> de votre situation actuelle</p>
             </div>
             <div className="p-6 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
               <div className="text-4xl font-bold text-primary mb-4">2.</div>
-              <p className="text-muted-foreground">Construction du système vidéo et publicité</p>
+              <p className="text-muted-foreground">Construction du <span className="text-primary">système</span> vidéo et publicité</p>
             </div>
             <div className="p-6 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
               <div className="text-4xl font-bold text-primary mb-4">3.</div>
-              <p className="text-muted-foreground">Mise en place des automatisations</p>
+              <p className="text-muted-foreground">Mise en place des <span className="text-primary">automatisations</span></p>
             </div>
             <div className="p-6 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
               <div className="text-4xl font-bold text-primary mb-4">4.</div>
               <p className="text-muted-foreground">Suivi et optimisation</p>
             </div>
           </div>
-          <p className="text-lg text-foreground font-medium mt-8 text-center">Vous savez exactement ce qui attire vos clients.</p>
+          <p className="text-lg text-foreground font-medium mt-8 text-center">Vous savez exactement ce qui attire vos <span className="text-primary">clients</span>.</p>
         </div>
 
         {/* SECTION RÉSULTAT */}
@@ -152,7 +152,7 @@ const VideoShowcase = () => {
             L'objectif est simple
           </h2>
           <p className="text-xl text-muted-foreground font-medium">
-            que vous n'ayez plus à vous demander d'où viendront vos prochains clients.
+            que vous n'ayez plus à vous demander d'où viendront vos prochains <span className="text-primary">clients</span>.
           </p>
         </div>
 
@@ -160,7 +160,7 @@ const VideoShowcase = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="p-8 md:p-12 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
             <p className="text-lg text-muted-foreground mb-4">Vous pouvez continuer à tester des actions isolées.</p>
-            <p className="text-xl text-foreground font-bold">Ou mettre en place un système clair qui travaille pour votre entreprise.</p>
+            <p className="text-xl text-foreground font-bold">Ou mettre en place un <span className="text-primary">système</span> clair qui travaille pour votre entreprise.</p>
           </div>
         </div>
 

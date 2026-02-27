@@ -45,12 +45,12 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center">
           {/* Main headline - H1 */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight">
-            Mettez en place un système qui génère des clients chaque mois grâce à la vidéo, la publicité et l'automatisation.
+            Mettez en place un <span className="text-primary">système</span> qui génère des <span className="text-primary">clients</span> chaque mois grâce à la <span className="text-primary">vidéo</span>, la <span className="text-primary">publicité</span> et l'<span className="text-primary">automatisation</span>.
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-medium">
-            Nous aidons les entreprises à transformer leur visibilité en demandes concrètes grâce à une stratégie vidéo et publicitaire pensée pour attirer des clients, pas juste pour être vue.
+            Nous aidons les entreprises à transformer leur visibilité en <span className="text-primary">demandes</span> concrètes grâce à une stratégie vidéo et publicitaire pensée pour attirer des clients, pas juste pour être vue.
           </p>
 
           {/* CTA Button */}
@@ -61,7 +61,7 @@ const Hero = () => {
               className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-12 py-7 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
             >
               <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
-                Analyser mon acquisition actuelle
+                <span className="text-accent-foreground">Analyser</span> mon acquisition actuelle
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>

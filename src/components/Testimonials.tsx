@@ -44,7 +44,7 @@ const Testimonials = () => {
             Un partenaire, pas un simple prestataire.
           </h2>
           <p className="text-lg text-muted-foreground font-medium">
-            Nous travaillons avec un nombre limité de clients afin de garantir un accompagnement sérieux et structuré. Si votre projet n'est pas adapté, nous vous le dirons simplement.
+            Nous travaillons avec un nombre limité de <span className="text-primary">clients</span> afin de garantir un accompagnement sérieux et structuré. Si votre projet n'est pas adapté, nous vous le dirons simplement.
           </p>
         </div>
 
