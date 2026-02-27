@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center">
           {/* Main headline - H1 */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight">
-            Mettez en place un <span className="text-primary">système</span> qui génère des <span className="text-primary">clients</span> chaque mois grâce à la <span className="text-primary">vidéo</span>, la <span className="text-primary">publicité</span> et l'<span className="text-primary">automatisation</span>.
+            Mettez en place un <span className="text-primary">système</span> qui génère des <span className="text-primary">clients</span> chaque mois grâce à la vidéo, la publicité et l'automatisation.
           </h1>
 
           {/* Subtitle */}
