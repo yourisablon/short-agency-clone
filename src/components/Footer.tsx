@@ -17,8 +17,7 @@ const Footer = () => {
               Navigation
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
-              <li><a href="#avis" className="text-background/70 hover:text-background transition-colors">Avis clients</a></li>
+              <li><a href="/" className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
             </ul>
           </div>
 
