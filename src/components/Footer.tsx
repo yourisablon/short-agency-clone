@@ -18,21 +18,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
-              <li><a href="#portfolio" className="text-background/70 hover:text-background transition-colors">Portfolio</a></li>
               <li><a href="#avis" className="text-background/70 hover:text-background transition-colors">Avis clients</a></li>
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="font-semibold text-sm uppercase tracking-wider">
-              Services
-            </h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Vidéos publicitaires</a></li>
-              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Contenu organique</a></li>
-              <li><a href="#" className="text-background/70 hover:text-background transition-colors">VSL & Sales</a></li>
-              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Social Media</a></li>
-              <li><a href="#" className="text-background/70 hover:text-background transition-colors">IA & 3D</a></li>
             </ul>
           </div>
 
@@ -46,7 +32,7 @@ const Footer = () => {
               <li><a href="tel:+33695009518" className="text-background/70 hover:text-background transition-colors">+33 6 95 00 95 18</a></li>
               <li>
                 <a 
-                  href="https://www.instagram.com/yourisablon/" 
+                  href="https://www.instagram.com/developpetoncab?igsh=MWVzMTBoamVpc2xt" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-background/70 hover:text-background transition-colors inline-flex items-center gap-2"
