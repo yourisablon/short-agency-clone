@@ -28,15 +28,16 @@ const Testimonials = () => {
               style={{ boxShadow: '0 0 60px hsl(var(--primary) / 0.3)' }}
             />
 
-            <h3 className="text-2xl font-bold text-foreground mb-6">Cecile Prost Avocats</h3>
-            
+            <h3 className="text-2xl font-bold text-foreground mb-6">Cabinet d'avocate — reprise d'activité</h3>
+
             <div className="space-y-3 text-lg text-muted-foreground mb-6">
-              <p><span className="text-foreground font-medium">Avant :</span> Appels irréguliers</p>
-              <p><span className="text-foreground font-medium">Après :</span> <span className="text-primary font-bold">+50 demandes en 30 jours</span></p>
+              <p><span className="text-foreground font-medium">Avant :</span> Agenda vide, dépendance au bouche-à-oreille</p>
+              <p><span className="text-foreground font-medium">30 jours :</span> <span className="text-primary font-bold">4 appels/jour — 7 000 € de CA</span></p>
+              <p><span className="text-foreground font-medium">2 mois :</span> <span className="text-primary font-bold">14 000 € de CA cumulé — agenda rempli</span></p>
             </div>
 
             <p className="text-muted-foreground">
-              👉 Grâce au système : contenu + ads + automatisation.
+              👉 Sans prospection. Juste son métier — pendant que le système amenait les clients.
             </p>
           </div>
         </div>
