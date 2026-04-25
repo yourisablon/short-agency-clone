@@ -24,7 +24,7 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/contact" className="text-background/70 hover:text-background transition-colors">Nous contacter</a></li>
+              <li><a href="/#contact" className="text-background/70 hover:text-background transition-colors">Nous contacter</a></li>
               <li><a href="mailto:contact@agencenoa.com" className="text-background/70 hover:text-background transition-colors">contact@agencenoa.com</a></li>
             </ul>
           </div>
