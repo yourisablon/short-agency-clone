@@ -1,4 +1,19 @@
+import { useLocation, useNavigate } from "react-router-dom";
+
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const goHome = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  };
+
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-6">
@@ -15,7 +30,7 @@ const Footer = () => {
               Navigation
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/" className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
+              <li><a href="/" onClick={goHome} className="text-background/70 hover:text-background transition-colors">Accueil</a></li>
             </ul>
           </div>
 
