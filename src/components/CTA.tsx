@@ -33,20 +33,19 @@ const CTA = () => {
 
               <div className="flex flex-col items-center gap-3">
                 <Button
-                  asChild
+                  type="button"
                   size="lg"
+                  onClick={() => {
+                    const el = document.getElementById("reserver");
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                      window.scrollTo({ top: y, behavior: "smooth" });
+                    }
+                  }}
                   className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-6 sm:px-8 md:px-12 py-5 md:py-7 text-sm sm:text-base md:text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
                 >
-                  <a
-                    href="#reserver"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document.getElementById("reserver")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                  >
-                    Réserver mon créneau
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-                  </a>
+                  Réserver mon créneau
+                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
                 <p className="text-sm text-muted-foreground mt-4">
                   Youri Sablon — Développe ton Cab'<br />
