@@ -36,7 +36,13 @@ const Hero = () => {
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-12 py-7 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
             >
-              <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+              <a
+                href="#reserver"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("reserver")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Réserver un appel
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>

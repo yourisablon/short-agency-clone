@@ -37,7 +37,15 @@ const Navigation = () => {
             asChild
             className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-6 font-bold shadow-lg hover:shadow-accent/50 transition-all duration-300"
           >
-            <a href="https://calendly.com/youri-sablon?fbclid=PAZXh0bgNhZW0CMTEAAaf_-JPG6bCJtXlGibEezpsskIEeUtgAUTVU1R3IGYsC2PvFWOq50aR9lX4EZg_aem_bObIZMDWq0Ti5c0SKolc6w" target="_blank" rel="noopener noreferrer">
+            <a
+              href="/#reserver"
+              onClick={(e) => {
+                if (location.pathname === "/") {
+                  e.preventDefault();
+                  document.getElementById("reserver")?.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Prendre RDV
             </a>
           </Button>
