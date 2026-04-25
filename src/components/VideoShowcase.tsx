@@ -16,9 +16,13 @@ const VideoShowcase = () => {
             Tu ne sais jamais vraiment d'où viendra le prochain <span className="text-primary">client</span>.
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground">
-            <p>Tu comptes sur les recommandations, sur le bouche-à-oreille, sur le réseau. Parfois ça marche. Parfois non.</p>
-            <p>Et cette imprévisibilité — ce n'est pas juste un problème financier. C'est une charge mentale permanente.</p>
-            <p className="font-medium text-foreground">Ce n'est pas un problème de compétence. C'est un problème de visibilité.</p>
+            <p>Tu comptes sur les recommandations, sur le bouche-à-oreille, sur le réseau.</p>
+            <p>Parfois ça marche.</p>
+            <p>Parfois non.</p>
+            <p>Et cette imprévisibilité — ce n'est pas juste un problème financier.</p>
+            <p>C'est une charge mentale permanente.</p>
+            <p className="font-medium text-foreground">Ce n'est pas un problème de compétence.</p>
+            <p className="font-medium text-foreground">C'est un problème de visibilité.</p>
           </div>
         </div>
 
@@ -33,9 +37,10 @@ const VideoShowcase = () => {
             <p>« Avocat pénal urgence Lyon. »</p>
             <p>« Avocat divorce Paris. »</p>
           </div>
-          <div className="space-y-4 text-lg text-muted-foreground">
+          <div className="space-y-6 text-lg text-muted-foreground">
             <p>Si ton cabinet n'apparaît pas dans ces résultats — ce client appelle quelqu'un d'autre.</p>
-            <p className="font-medium text-foreground">Pas parce que tu es moins bon. Parce qu'il ne sait pas que tu existes.</p>
+            <p className="font-medium text-foreground">Pas parce que tu es moins bon.</p>
+            <p className="font-medium text-foreground">Parce qu'il ne sait pas que tu existes.</p>
           </div>
         </div>
 
@@ -47,13 +52,19 @@ const VideoShowcase = () => {
             </span>
           </div>
           <div className="space-y-6 text-lg text-muted-foreground">
-            <p>Ma compagne est avocate. Elle reprenait son activité après la naissance de notre fils.</p>
+            <p>Ma compagne est avocate.</p>
+            <p>Elle reprenait son activité après la naissance de notre fils.</p>
             <p className="text-foreground font-medium">Elle avait peur.</p>
-            <p>Pas peur de plaider. Pas peur des dossiers.</p>
+            <p>Pas peur de plaider.</p>
+            <p>Pas peur des dossiers.</p>
             <p className="text-foreground font-medium">Peur que le téléphone ne sonne pas.</p>
             <p>Peur de repartir de zéro — avec un bébé dans les bras.</p>
-            <p>Elle connaissait le droit. Elle avait l'expérience. Mais elle n'avait aucun système pour attirer des clients. Juste l'espoir que le bouche-à-oreille fasse son travail.</p>
-            <p>Un soir, entre deux couches et un biberon, j'ai eu le temps de réfléchir. Alors j'ai décidé de tester mon système sur son cabinet.</p>
+            <p>Elle connaissait le droit.</p>
+            <p>Elle avait l'expérience.</p>
+            <p>Mais elle n'avait aucun système pour attirer des clients.</p>
+            <p>Juste l'espoir que le bouche-à-oreille fasse son travail.</p>
+            <p>Un soir, entre deux couches et un biberon, j'ai eu le temps de réfléchir.</p>
+            <p>Alors j'ai décidé de tester mon système sur son cabinet.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mt-12">
@@ -69,8 +80,9 @@ const VideoShowcase = () => {
             </div>
           </div>
 
-          <div className="space-y-3 text-lg text-muted-foreground mt-8">
-            <p>Elle n'a pas prospecté. Elle n'a pas passé ses soirées sur les réseaux.</p>
+          <div className="space-y-6 text-lg text-muted-foreground mt-8">
+            <p>Elle n'a pas prospecté.</p>
+            <p>Elle n'a pas passé ses soirées sur les réseaux.</p>
             <p className="text-foreground font-medium">Elle a juste fait son métier — pendant que mon système amenait les clients.</p>
           </div>
         </div>
@@ -85,10 +97,12 @@ const VideoShowcase = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-8">
             Je m'occupe de tout pour que ton cabinet apparaisse sur <span className="text-primary">Google</span>.
           </h2>
-          <div className="space-y-4 text-lg text-muted-foreground mb-12">
+          <div className="space-y-6 text-lg text-muted-foreground mb-12">
             <p>Quand un client cherche un avocat dans ta ville, c'est toi qu'il trouve.</p>
-            <p>Tu n'as rien à gérer. Ni les publicités, ni la technique, ni le suivi.</p>
-            <p className="text-foreground font-medium">Tu reçois les demandes de RDV. Tu fais ton métier.</p>
+            <p>Tu n'as rien à gérer.</p>
+            <p>Ni les publicités, ni la technique, ni le suivi.</p>
+            <p className="text-foreground font-medium">Tu reçois les demandes de RDV.</p>
+            <p className="text-foreground font-medium">Tu fais ton métier.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
