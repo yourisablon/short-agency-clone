@@ -14,9 +14,6 @@ const Navigation = () => {
             <a href="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Accueil
             </a>
-            <a href="/#portfolio" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-              Portfolio
-            </a>
             <a href="/#avis" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Avis clients
             </a>
