@@ -1,5 +1,3 @@
-import { Instagram } from "lucide-react";
-
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
@@ -28,18 +26,6 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><a href="/contact" className="text-background/70 hover:text-background transition-colors">Nous contacter</a></li>
               <li><a href="mailto:contact@agencenoa.com" className="text-background/70 hover:text-background transition-colors">contact@agencenoa.com</a></li>
-              <li><a href="tel:+33695009518" className="text-background/70 hover:text-background transition-colors">+33 6 95 00 95 18</a></li>
-              <li>
-                <a 
-                  href="https://www.instagram.com/developpetoncab?igsh=MWVzMTBoamVpc2xt" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-background/70 hover:text-background transition-colors inline-flex items-center gap-2"
-                >
-                  <Instagram className="w-4 h-4" />
-                  Instagram
-                </a>
-              </li>
             </ul>
           </div>
         </div>
