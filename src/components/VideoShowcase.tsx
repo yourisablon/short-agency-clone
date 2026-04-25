@@ -131,15 +131,21 @@ const VideoShowcase = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-8 md:p-10 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-4">Avant</p>
-              <p className="text-lg text-muted-foreground">
-                Agenda imprévisible. CA qui fluctue. Dépendance totale au bouche-à-oreille. Stress de fin de mois. Pas de temps pour prospecter — et pas l'envie non plus.
-              </p>
+              <ul className="space-y-3 text-lg text-muted-foreground list-disc pl-5">
+                <li>Agenda imprévisible.</li>
+                <li>CA qui fluctue.</li>
+                <li>Dépendance totale au bouche-à-oreille.</li>
+                <li>Stress de fin de mois.</li>
+                <li>Pas de temps pour prospecter — et pas l'envie non plus.</li>
+              </ul>
             </div>
             <div className="p-8 md:p-10 rounded-2xl border-2 border-primary/30" style={{ background: 'var(--gradient-card)' }}>
               <p className="text-sm uppercase tracking-wider text-primary mb-4 font-bold">Après</p>
-              <p className="text-lg text-foreground">
-                Des demandes de RDV qualifiées chaque semaine. Un CA prévisible. Un cabinet qui tourne — sans que tu aies à te vendre toi-même.
-              </p>
+              <ul className="space-y-3 text-lg text-foreground list-disc pl-5">
+                <li>Des demandes de RDV qualifiées chaque semaine.</li>
+                <li>Un CA prévisible.</li>
+                <li>Un cabinet qui tourne — sans que tu aies à te vendre toi-même.</li>
+              </ul>
             </div>
           </div>
         </div>
