@@ -4,6 +4,7 @@ import VideoShowcase from "@/components/VideoShowcase";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
@@ -17,6 +18,7 @@ const Index = () => {
         <Testimonials />
         <Portfolio />
         <CTA />
+        <CalendlyEmbed sectionId="reserver" />
         <ContactForm sectionId="contact" />
       </main>
       <Footer />
