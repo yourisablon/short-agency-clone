@@ -33,21 +33,26 @@ const Navigation = () => {
             </a>
           </div>
 
-          <Button 
-            asChild
+          <Button
+            type="button"
+            onClick={() => {
+              const scroll = () => {
+                const el = document.getElementById("reserver");
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              };
+              if (location.pathname === "/") {
+                scroll();
+              } else {
+                navigate("/");
+                setTimeout(scroll, 100);
+              }
+            }}
             className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-6 font-bold shadow-lg hover:shadow-accent/50 transition-all duration-300"
           >
-            <a
-              href="/#reserver"
-              onClick={(e) => {
-                if (location.pathname === "/") {
-                  e.preventDefault();
-                  document.getElementById("reserver")?.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-            >
-              Prendre RDV
-            </a>
+            Prendre RDV
           </Button>
         </div>
       </div>

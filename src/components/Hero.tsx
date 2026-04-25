@@ -32,20 +32,19 @@ const Hero = () => {
 
           <div className="flex flex-col items-center gap-3">
             <Button
-              asChild
+              type="button"
               size="lg"
+              onClick={() => {
+                const el = document.getElementById("reserver");
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
               className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-12 py-7 text-lg font-bold shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
             >
-              <a
-                href="#reserver"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById("reserver")?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Réserver un appel
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              Réserver un appel
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <p className="text-sm text-muted-foreground">
               Appel de 20 minutes. Sans engagement.
