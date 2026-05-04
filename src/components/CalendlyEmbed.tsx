@@ -27,7 +27,7 @@ const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
         </div>
         <div
           className="calendly-inline-widget mx-auto"
-          data-url="https://calendly.com/youri-sablon/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+          data-url="https://calendly.com/youri-sablon/20min?hide_gdpr_banner=1"
           style={{ minWidth: "320px", height: "700px" }}
         />
       </div>
