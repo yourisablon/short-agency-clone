@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 180 15% 20%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 155 100% 75%;
+    --accent: 80 75% 50%;
     --accent-foreground: 180 25% 12%;
 
     --destructive: 0 84.2% 60.2%;
@@ -41,9 +41,9 @@ All colors MUST be HSL.
     /* Custom design tokens - Bold Modern Agency */
     --gradient-primary: linear-gradient(135deg, hsl(20 95% 55%), hsl(28 100% 60%));
     --gradient-hero: radial-gradient(ellipse 80% 50% at 50% 0%, hsl(180 30% 18%), hsl(180 25% 12%));
-    --gradient-accent: linear-gradient(135deg, hsl(155 100% 75% / 0.15), hsl(20 95% 55% / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(80 75% 50% / 0.15), hsl(20 95% 55% / 0.1));
     --gradient-card: linear-gradient(135deg, hsl(180 20% 18%), hsl(180 20% 15%));
-    --gradient-mesh: radial-gradient(at 20% 30%, hsl(20 95% 55% / 0.15) 0px, transparent 50%), radial-gradient(at 80% 70%, hsl(155 100% 75% / 0.1) 0px, transparent 50%);
+    --gradient-mesh: radial-gradient(at 20% 30%, hsl(20 95% 55% / 0.15) 0px, transparent 50%), radial-gradient(at 80% 70%, hsl(80 75% 50% / 0.1) 0px, transparent 50%);
     
     --shadow-glow: 0 20px 70px -20px hsl(20 95% 55% / 0.6);
     --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
@@ -73,7 +73,7 @@ All colors MUST be HSL.
     --muted: 180 20% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 155 100% 75%;
+    --accent: 80 75% 50%;
     --accent-foreground: 180 30% 8%;
 
     --destructive: 0 62.8% 30.6%;
@@ -84,7 +84,7 @@ All colors MUST be HSL.
     --ring: 20 95% 55%;
     
     --gradient-hero: radial-gradient(ellipse 80% 50% at 50% 0%, hsl(180 35% 15%), hsl(180 30% 8%));
-    --gradient-mesh: radial-gradient(at 20% 30%, hsl(20 95% 55% / 0.2) 0px, transparent 50%), radial-gradient(at 80% 70%, hsl(155 100% 75% / 0.15) 0px, transparent 50%);
+    --gradient-mesh: radial-gradient(at 20% 30%, hsl(20 95% 55% / 0.2) 0px, transparent 50%), radial-gradient(at 80% 70%, hsl(80 75% 50% / 0.15) 0px, transparent 50%);
     --shadow-glow: 0 20px 70px -20px hsl(20 95% 55% / 0.8);
     --shadow-intense: 0 25px 80px -15px hsl(20 95% 55% / 0.9);
   }
