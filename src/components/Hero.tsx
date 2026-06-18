@@ -15,19 +15,13 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10 pt-20">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-accent font-bold text-sm tracking-wider uppercase mb-6">
-            Développe ton Cab'
-          </p>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight">
             Tu es un bon <span className="text-primary">avocat</span>.<br />
             Mais ton agenda ne le reflète pas encore.
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto font-medium">
-            Tu as fait les études. Tu as passé le barreau. Tu as l'expertise, les dossiers, la rigueur.
-          </p>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-medium">
-            Mais certains mois, ton téléphone ne sonne pas assez.
+            Tu as fait les études. Tu as passé le barreau. Tu as l'expertise, les dossiers, la rigueur. Mais certains mois, ton téléphone ne sonne pas assez.
           </p>
 
           <div className="flex flex-col items-center gap-3">
