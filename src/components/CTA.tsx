@@ -28,7 +28,7 @@ const CTA = () => {
                 Un appel de <span className="text-primary">20 minutes</span>. Sans engagement.
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-                On regarde ensemble si ton cabinet a le potentiel pour que ce système fonctionne — et je te dis honnêtement si je peux t'aider.
+                On regarde ensemble si ton cabinet a le potentiel pour que ce système fonctionne, et je te dis honnêtement si je peux t'aider.
               </p>
 
               <div className="flex flex-col items-center gap-3">
@@ -48,8 +48,8 @@ const CTA = () => {
                   <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Youri Sablon — Développe ton Cab'<br />
-                  Spécialiste acquisition locale pour avocats libéraux
+                  Youri Sablon, Développe ton Cab'.<br />
+                  Spécialiste acquisition locale pour avocats libéraux.
                 </p>
               </div>
             </div>
