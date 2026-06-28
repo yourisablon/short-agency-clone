@@ -20,8 +20,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="/" onClick={goHome} className="hover:opacity-80 transition-opacity">
-            <div className="text-2xl font-bold text-foreground tracking-tight">Développe ton cab</div>
-            <div className="text-xs font-medium text-muted-foreground -mt-1">par agence NOT ONLY ADS</div>
+            <div className="text-2xl font-bold text-foreground tracking-tight">DÉVELOPPE TON CAB</div>
           </a>
           
           <div className="hidden md:flex items-center gap-8">
