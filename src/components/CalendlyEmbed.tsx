@@ -1,49 +1,15 @@
-import { useEffect, useRef } from "react";
-
 interface CalendlyEmbedProps {
   sectionId?: string;
 }
 
-const CALENDLY_URL = "https://calendly.com/youri-sablon/20min?hide_gdpr_banner=1";
-const SCRIPT_SRC = "https://assets.calendly.com/assets/external/widget.js";
+const CALENDLY_BASE_URL = "https://calendly.com/youri-sablon/20min";
 
 const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    let attempts = 0;
-
-    const tryInit = () => {
-      if (cancelled) return;
-      const w = (window as any).Calendly;
-      const el = containerRef.current;
-      if (el && w && typeof w.initInlineWidget === "function") {
-        if (!el.querySelector("iframe")) {
-          el.innerHTML = "";
-          w.initInlineWidget({ url: CALENDLY_URL, parentElement: el });
-        }
-        return;
-      }
-      if (attempts++ < 50) setTimeout(tryInit, 100);
-    };
-
-    const existing = document.querySelector(
-      `script[src="${SCRIPT_SRC}"]`
-    ) as HTMLScriptElement | null;
-    if (!existing) {
-      const script = document.createElement("script");
-      script.src = SCRIPT_SRC;
-      script.async = true;
-      script.onload = tryInit;
-      document.body.appendChild(script);
-    }
-    tryInit();
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  const embedDomain =
+    typeof window !== "undefined" ? window.location.hostname : "developpetoncab.com";
+  const calendlyUrl = `${CALENDLY_BASE_URL}?hide_gdpr_banner=1&embed_domain=${encodeURIComponent(
+    embedDomain
+  )}&embed_type=Inline`;
 
   return (
     <section id={sectionId} className="py-20 bg-background">
@@ -56,10 +22,11 @@ const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
             Choisis un créneau qui te convient. 20 minutes, sans engagement.
           </p>
         </div>
-        <div
-          ref={containerRef}
-          className="calendly-inline-widget mx-auto"
-          style={{ minWidth: "320px", height: "700px" }}
+        <iframe
+          title="Réserver un appel Calendly"
+          src={calendlyUrl}
+          className="mx-auto w-full max-w-4xl border-0"
+          style={{ minWidth: "320px", height: "760px" }}
         />
       </div>
     </section>
