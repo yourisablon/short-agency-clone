@@ -57,6 +57,7 @@ const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
           </p>
         </div>
         <div
+          ref={containerRef}
           className="calendly-inline-widget mx-auto"
           style={{ minWidth: "320px", height: "700px" }}
         />
