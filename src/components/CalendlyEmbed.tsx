@@ -1,31 +1,48 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 interface CalendlyEmbedProps {
   sectionId?: string;
 }
 
 const CALENDLY_URL = "https://calendly.com/youri-sablon/20min?hide_gdpr_banner=1";
+const SCRIPT_SRC = "https://assets.calendly.com/assets/external/widget.js";
 
 const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const scriptSrc = "https://assets.calendly.com/assets/external/widget.js";
-    const initWidget = () => {
+    let cancelled = false;
+    let attempts = 0;
+
+    const tryInit = () => {
+      if (cancelled) return;
       const w = (window as any).Calendly;
-      const el = document.querySelector(".calendly-inline-widget") as HTMLElement | null;
-      if (w && el && !el.querySelector("iframe")) {
-        w.initInlineWidget({ url: CALENDLY_URL, parentElement: el });
+      const el = containerRef.current;
+      if (el && w && typeof w.initInlineWidget === "function") {
+        if (!el.querySelector("iframe")) {
+          el.innerHTML = "";
+          w.initInlineWidget({ url: CALENDLY_URL, parentElement: el });
+        }
+        return;
       }
+      if (attempts++ < 50) setTimeout(tryInit, 100);
     };
-    const existing = document.querySelector(`script[src="${scriptSrc}"]`) as HTMLScriptElement | null;
-    if (existing) {
-      initWidget();
-      return;
+
+    const existing = document.querySelector(
+      `script[src="${SCRIPT_SRC}"]`
+    ) as HTMLScriptElement | null;
+    if (!existing) {
+      const script = document.createElement("script");
+      script.src = SCRIPT_SRC;
+      script.async = true;
+      script.onload = tryInit;
+      document.body.appendChild(script);
     }
-    const script = document.createElement("script");
-    script.src = scriptSrc;
-    script.async = true;
-    script.onload = initWidget;
-    document.body.appendChild(script);
+    tryInit();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return (
