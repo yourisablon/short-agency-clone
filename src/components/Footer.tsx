@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">AGENCE NOA</h3>
+            <h3 className="text-2xl font-bold">DÉVELOPPE TON CAB</h3>
             <p className="text-sm text-background/70">
               NOT ONLY ADS
             </p>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-sm text-background/70">
-          <p>&copy; 2025 AGENCE NOA. Tous droits réservés.</p>
+          <p>&copy; 2025 DÉVELOPPE TON CAB. Tous droits réservés.</p>
           <div className="flex items-center gap-4">
             <a href="/cgv" className="hover:text-background transition-colors">CGV</a>
             <a href="/mentions-legales" className="hover:text-background transition-colors">Mentions légales</a>
