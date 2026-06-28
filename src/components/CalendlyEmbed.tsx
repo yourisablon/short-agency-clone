@@ -4,13 +4,27 @@ interface CalendlyEmbedProps {
   sectionId?: string;
 }
 
+const CALENDLY_URL = "https://calendly.com/youri-sablon/20min?hide_gdpr_banner=1";
+
 const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
   useEffect(() => {
     const scriptSrc = "https://assets.calendly.com/assets/external/widget.js";
-    if (document.querySelector(`script[src="${scriptSrc}"]`)) return;
+    const initWidget = () => {
+      const w = (window as any).Calendly;
+      const el = document.querySelector(".calendly-inline-widget") as HTMLElement | null;
+      if (w && el && !el.querySelector("iframe")) {
+        w.initInlineWidget({ url: CALENDLY_URL, parentElement: el });
+      }
+    };
+    const existing = document.querySelector(`script[src="${scriptSrc}"]`) as HTMLScriptElement | null;
+    if (existing) {
+      initWidget();
+      return;
+    }
     const script = document.createElement("script");
     script.src = scriptSrc;
     script.async = true;
+    script.onload = initWidget;
     document.body.appendChild(script);
   }, []);
 
@@ -27,7 +41,6 @@ const CalendlyEmbed = ({ sectionId }: CalendlyEmbedProps) => {
         </div>
         <div
           className="calendly-inline-widget mx-auto"
-          data-url="https://calendly.com/youri-sablon/20min?hide_gdpr_banner=1"
           style={{ minWidth: "320px", height: "700px" }}
         />
       </div>
