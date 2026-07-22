@@ -54,6 +54,16 @@ const VideoShowcase = () => {
             <p>J'ai installé mon système d'acquisition sur son cabinet.</p>
           </div>
 
+          <div className="mt-12 rounded-2xl overflow-hidden border border-border/50 aspect-video w-full">
+            <iframe
+              src="https://www.youtube.com/embed/aC3WsmqwpOU"
+              title="Témoignage d'une avocate - Développe ton Cab"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             <div className="p-8 rounded-2xl border border-border/50" style={{ background: 'var(--gradient-card)' }}>
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">30 jours plus tard</p>
